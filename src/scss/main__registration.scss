@@ -11,8 +11,8 @@ button{
 main{
     background-color: #f9fafc;
     height: 100vh;
-    width: 100vw;
     overflow: hidden;
+    width: 100vw;
 }
 
 .header{
@@ -64,7 +64,7 @@ main{
 .container{
     align-self: auto;
     background-color: $fon;
-    border: 1px solid #ffffff;
+    border: 1px solid #fff;
     border-radius: 10px;
     box-shadow: 0 5px 40px rgba(0, 45, 113, 0.06);
     margin: 130px auto;
@@ -180,8 +180,8 @@ main{
         }
 
         & a{
-            padding-left: 10px;
             color: $primary;
+            padding-left: 10px;
 
         }
     }
@@ -210,43 +210,46 @@ input[type="checkbox"] + label:before{
 input[type="checkbox"]:checked + label:before{
     color: $success;
 }
+
 .square{
-    width: 1000px;
     height: 1000px;
     margin: 0 auto;
+    width: 1000px;
 }
+
 .circle{
     background: rgba(254, 254, 254, 0.45);
     border: 1px solid rgba(254, 254, 254, 0.45);
-    box-shadow: 0px 0px 42px rgba(231, 231, 231, 0.13);
-    width: 80%;
-    height: 80%;
-    margin: 10% auto;
     border-radius: 50%;
+    box-shadow: 0 0 42px rgba(231, 231, 231, 0.13);
     display: flex;
+    height: 80%;
     justify-content: center;
+    margin: 10% auto;
+    width: 80%;
     & h1{
-        font-family: $exo2;
-        font-weight: 600;
-        font-size: 50px;
-        line-height: 60px;
-        text-align: center;
-        letter-spacing: 0.4px;
-        font-style: normal;
         color: $sky;
-        position: absolute;
-        top:65%;
-    }
-    & h2{
         font-family: $exo2;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: center;
-        letter-spacing: 0.4px;
+        font-size: 50px;
         font-style: normal;
-        color: $content;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        line-height: 60px;
         position: absolute;
+        text-align: center;
+        top: 65%;
+    }
+
+    & h2{
+        color: $content;
+        font-family: $exo2;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        line-height: 29px;
+        position: absolute;
+        text-align: center;
         top: 80%;
     }
 }
@@ -254,13 +257,13 @@ input[type="checkbox"]:checked + label:before{
 .progress{
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
     margin-bottom: 20px;
+    margin-top: 5px;
     &__line{
-        width: 128px;
-        height: 6px;
-        background: #EBEFF3;
+        background: #ebeff3;
         border-radius: 2px;
+        height: 6px;
+        width: 128px;
     }
 }
 
@@ -269,8 +272,8 @@ input[type="checkbox"]:checked + label:before{
 }
 
 .envelop{
-    width: 150px;
+    background-image: url('../img/email.svg');
     height: 170px;
     margin: 10% auto;
-    background-image: url(../img/email.svg);
+    width: 150px;
 }
