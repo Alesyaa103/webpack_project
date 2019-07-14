@@ -1,0 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: 0; }
+
+main {
+  background-color: #f9fafc;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; }
+
+.header {
+  display: flex;
+  height: 8%;
+  justify-content: space-between; }
+  .header__logo {
+    background-image: url(images/logo.svg);
+    background-size: cover;
+    height: 35.32px;
+    margin-left: 141px;
+    margin-top: 20px;
+    width: 138px; }
+  .header__text {
+    margin-right: 137px;
+    margin-top: 28px; }
+    .header__text span {
+      color: #222428;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      letter-spacing: 0.28px;
+      line-height: 19px; }
+    .header__text a {
+      color: #2a74db;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      letter-spacing: 0.28px;
+      line-height: 19px;
+      padding-left: 5px; }
+
+.content {
+  align-items: center;
+  display: flex;
+  height: 92%;
+  justify-content: center; }
+
+.container {
+  align-self: auto;
+  background-color: #fff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 40px rgba(0, 45, 113, 0.06);
+  margin: 130px auto;
+  position: relative;
+  width: 632px; }
+
+.send {
+  margin: 70px auto;
+  position: relative;
+  width: 400px; }
+  .send input {
+    background-color: #fcfcfc;
+    border: 2px solid #f2f2f2;
+    border-radius: 2px;
+    display: block;
+    height: 40px;
+    margin-bottom: 24px;
+    outline: none;
+    padding-left: 13px;
+    width: 383px; }
+    .send input:focus {
+      box-shadow: -2px 0 0 0 #2a74db; }
+    .send input::placeholder {
+      color: rgba(135, 144, 167, 0.57);
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: 0.28px;
+      line-height: 16px; }
+  .send button {
+    background-color: #0ad69c;
+    border-radius: 2px;
+    color: #fff;
+    font-family: "Exo 2", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    height: 42px;
+    letter-spacing: 0.4px;
+    line-height: 19px;
+    text-align: center;
+    width: 188px; }
+  .send__link {
+    bottom: 55px;
+    color: #222428;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.28px;
+    line-height: 14px;
+    position: absolute;
+    right: 0; }
+  .send__button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px; }
+  .send__same {
+    display: flex;
+    justify-content: space-between;
+    width: 400px; }
+    .send__same input {
+      width: 173px; }
+  .send__name {
+    color: #002396;
+    font-family: "Exo 2", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    line-height: 34px;
+    padding-bottom: 27px; }
+    .send__name--black {
+      color: #222428;
+      font-family: "Exo 2", sans-serif;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      line-height: 34px;
+      padding-bottom: 27px; }
+  .send__check {
+    display: inline-block;
+    height: 40px;
+    width: 400px; }
+    .send__check a, .send__check label {
+      color: #222428;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      letter-spacing: 0.28px;
+      line-height: 16px; }
+    .send__check a {
+      padding-left: 10px;
+      color: #002396; }
+
+input[type="checkbox"] {
+  display: none; }
+
+input[type="checkbox"] + label:before {
+  border: 2px solid #f2f2f2;
+  border-radius: 2px;
+  color: transparent;
+  content: "\2714";
+  display: inline-block;
+  font-size: 20px;
+  height: 20px;
+  line-height: 22px;
+  margin: -5px 5px 0 0;
+  text-align: center;
+  transition: color ease .3s;
+  vertical-align: middle;
+  width: 20px; }
+
+input[type="checkbox"]:checked + label:before {
+  color: #0ad69c; }
+
+.square {
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto; }
+
+.circle {
+  background: rgba(254, 254, 254, 0.45);
+  border: 1px solid rgba(254, 254, 254, 0.45);
+  box-shadow: 0px 0px 42px rgba(231, 231, 231, 0.13);
+  width: 80%;
+  height: 80%;
+  margin: 10% auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center; }
+  .circle h1 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    font-style: normal;
+    color: #2a74db;
+    position: absolute;
+    top: 65%; }
+  .circle h2 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    font-style: normal;
+    color: #222428;
+    position: absolute;
+    top: 80%; }
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 20px; }
+  .progress__line {
+    width: 128px;
+    height: 6px;
+    background: #EBEFF3;
+    border-radius: 2px; }
+
+.hidden {
+  display: none; }
+
+.envelop {
+  width: 170px;
+  height: 150px;
+  margin: 10% auto;
+  background-image: url(images/email.svg); }
+
