@@ -1,0 +1,1 @@
+import "./scss/main__registration.scss"
